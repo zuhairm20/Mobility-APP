@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>Report a bug</item>
+        <item>Send feedback</item>
+    </string-array>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values/values.xml -->
+    <eat-comment/>
+    <bool name="isTablet">false</bool>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="instabug_annotation_color_blue">#006AA1</color>
+    <color name="instabug_annotation_color_default">@color/instabug_annotation_color_blue</color>
+    <color name="instabug_annotation_color_gray">#E5E5E5</color>
+    <color name="instabug_annotation_color_green">#5CC500</color>
+    <color name="instabug_annotation_color_orange">#F77A00</color>
+    <color name="instabug_annotation_color_red">#ED3A3A</color>
+    <color name="instabug_annotation_color_yellow">#F1B600</color>
+    <color name="instabug_transparent_color">#00000000</color>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="instabug_actionbar_height">48dp</dimen>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="instabug_action_cancel" type="id"/>
+    <item name="instabug_action_clear_annotations" type="id"/>
+    <item name="instabug_action_open_composer" type="id"/>
+    <item name="instabug_action_pick_color" type="id"/>
+    <item name="instabug_action_send" type="id"/>
+    <item name="instabug_bottom_bar_toolbar" type="id"/>
+    <item name="instabug_brush_stroke" type="id"/>
+    <item name="instabug_top_bar_toolbar" type="id"/>
+    <item name="instabug_lyt_bottom_bar" type="layout"/>
+    <item name="instabug_lyt_top_bar" type="layout"/>
+    <item name="instabug_annotation_bottom_menu" type="menu"/>
+    <item name="instabug_annotation_top_menu" type="menu"/>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="bottommessage">Feedback Powered by &amp;name&amp;</string>
+    <string name="bugheader">Report a bug</string>
+    <string name="cancelbutton">Cancel</string>
+    <string name="commentplaceholder">Enter your feedback...</string>
+    <string name="edgeswipestartalerttext">Swipe from edge to send feedback</string>
+    <string name="emailplaceholder">Enter your Email...</string>
+    <string name="feedbackheader">Send feedback</string>
+    <string name="feedbacksentalerttext">Thank you for helping us improve InstabugApp!</string>
+    <string name="feedbacksentalerttitle">Feedback Sent</string>
+    <string name="invalidcommentalerttext">Please enter a valid comment</string>
+    <string name="invalidcommentalerttitle">Invalid Comment</string>
+    <string name="invalidemailalerttext">Please enter a valid email</string>
+    <string name="invalidemailalerttitle">Invalid Email</string>
+    <string name="pleasewait">Please wait a moment</string>
+    <string name="screenshotstartalerttext">Take a screenshot to send feedback</string>
+    <string name="shakestartalerttext">Shake to send feedback</string>
+    <string name="submitbutton">Send</string>
+    <string name="tutorialalerttext">Draw on screenshot then add text</string>
+    <string name="twofingerswipestartalerttext">Swipe two fingers to send feedback</string>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="InstabugBorderlessDialog" parent="android:Theme.Light">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@color/instabug_transparent_color</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+</resources>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Parse-Starter-Project-1.10.2/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-fr/values-fr.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-fr/values-fr.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>Signaler un problème</item>
+        <item>Envoyer un avis</item>
+    </string-array>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fr/values-fr.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Revenir à l\'accueil"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Revenir en haut de la page"</string>
@@ -15,4 +21,25 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Recherche vocale"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partager avec"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partager avec %s"</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-fr/values-fr.xml -->
+    <eat-comment/>
+    <string name="bottommessage">Système d\'avis avec &amp;name&amp;</string>
+    <string name="bugheader">Signaler un problème</string>
+    <string name="cancelbutton">Annuler</string>
+    <string name="commentplaceholder">Rédigez votre avis ici...</string>
+    <string name="edgeswipestartalerttext">Balayez depuis un bord pour envoyer un avis</string>
+    <string name="emailplaceholder">Indiquez votre adresse e-mail...</string>
+    <string name="feedbackheader">Envoyer un avis</string>
+    <string name="feedbacksentalerttext">Merci de nous aider à améliorer InstabugApp!</string>
+    <string name="feedbacksentalerttitle">Commentaire envoyé</string>
+    <string name="invalidcommentalerttext">Veuillez saisir une commentaire valide</string>
+    <string name="invalidcommentalerttitle">Commentaire invalide</string>
+    <string name="invalidemailalerttext">Veuillez saisir un e-mail valide</string>
+    <string name="invalidemailalerttitle">E-mail invalide</string>
+    <string name="pleasewait">S\'il vous plaît attendez un moment</string>
+    <string name="screenshotstartalerttext">Prenez une capture d\'écran pour envoyer un avis</string>
+    <string name="shakestartalerttext">Secouez pour envoyer un avis</string>
+    <string name="submitbutton">Envoyer</string>
+    <string name="tutorialalerttext">Dessinez sur la capture d\'écran et ajoutez du texte</string>
+    <string name="twofingerswipestartalerttext">Balayez deux doigts pour envoyer un avis</string>
 </resources>

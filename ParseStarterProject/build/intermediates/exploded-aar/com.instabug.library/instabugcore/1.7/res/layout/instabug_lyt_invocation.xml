@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#99000000"
+    android:id="@+id/instabug_main_invocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/instabug_options_invocation"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/instabug_option_report_bug"
+            android:text="Report a Bug"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/instabug_option_send_feedback"
+            android:text="Send Feedback" />
+        </LinearLayout>
+</FrameLayout><!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/layout/instabug_lyt_invocation.xml -->

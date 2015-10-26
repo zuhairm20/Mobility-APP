@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Set Brush Stroke"
+        app:showAsAction="always"
+        android:id="@+id/instabug_action_pick_color"
+        android:icon="@drawable/instabug_ic_tool_pen"
+        />
+
+
+    <item
+        android:title="Edit email and message"
+        app:showAsAction="always"
+        android:id="@+id/instabug_action_open_composer"
+        android:icon="@drawable/instabug_ic_tool_text" />
+
+
+    <item
+        android:title="Clear drawings"
+        app:showAsAction="always"
+        android:id="@+id/instabug_action_clear_annotations"
+        android:icon="@drawable/instabug_ic_tool_clear" />
+</menu><!-- From: file:/home/hassan/instabug/repo/android-as/instabugsupport/src/main/res/menu/instabug_annotation_bottom_menu.xml -->

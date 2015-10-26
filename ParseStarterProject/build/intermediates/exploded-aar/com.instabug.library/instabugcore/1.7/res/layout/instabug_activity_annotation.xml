@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/instabug_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/instabug_toolbar"
+        android:layout_below="@+id/instabug_titlebar">
+
+        <ProgressBar
+            android:id="@+id/progress_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <FrameLayout
+            android:id="@+id/annotation_view_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/instabug_bk_dropshadow"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <com.instabug.library.view.AnnotationView
+                android:id="@+id/annotation_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:keepScreenOn="true"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/instabug_lyt_color_picker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/instabug_actionbar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:id="@+id/color_blue_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/instabug_bk_blue_rounded" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/color_green_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/instabug_bk_green_rounded" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/color_yellow_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/instabug_bk_yellow_rounded" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/color_orange_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/instabug_bk_orange_rounded" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/color_red_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/instabug_bk_red_rounded" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/color_gray_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+        <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/instabug_bk_gray_rounded" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/instabug_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/instabug_actionbar_height"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/instabug_composer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/instabug_titlebar"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <include layout="@layout/instabug_lyt_dialog_composer" />
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>
+<!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/layout/instabug_activity_annotation.xml -->

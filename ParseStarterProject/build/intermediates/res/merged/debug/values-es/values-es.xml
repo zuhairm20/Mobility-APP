@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Parse-Starter-Project-1.10.2/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-es/values-es.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-es/values-es.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>Informar de una incidencia</item>
+        <item>Enviar comentarios</item>
+    </string-array>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-es/values-es.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
@@ -15,4 +21,25 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-es/values-es.xml -->
+    <eat-comment/>
+    <string name="bottommessage">Comentarios proporcionados mediante &amp;name&amp;</string>
+    <string name="bugheader">Informar de una incidencia</string>
+    <string name="cancelbutton">Cancelar</string>
+    <string name="commentplaceholder">Escriba sus comentarios aquí...</string>
+    <string name="edgeswipestartalerttext">Deslice los dedos desde el borde para enviarnos sus comentarios</string>
+    <string name="emailplaceholder">Introduzca su correo electrónico...</string>
+    <string name="feedbackheader">Enviar comentarios</string>
+    <string name="feedbacksentalerttext">Gracias por ayudarnos a mejorar InstabugApp</string>
+    <string name="feedbacksentalerttitle">Comentarios enviados</string>
+    <string name="invalidcommentalerttext">Introduzca un comentario válido</string>
+    <string name="invalidcommentalerttitle">Comentario no válido</string>
+    <string name="invalidemailalerttext">Introduzca un correo electrónico válido</string>
+    <string name="invalidemailalerttitle">Correo electrónico no válido</string>
+    <string name="pleasewait">Por favor, espere un momento</string>
+    <string name="screenshotstartalerttext">Realice una captura de pantalla para enviarnos sus comentarios</string>
+    <string name="shakestartalerttext">Sacuda el teléfono para enviarnos sus comentarios</string>
+    <string name="submitbutton">Enviar</string>
+    <string name="tutorialalerttext">Dibuje en la captura de pantalla y luego añada texto</string>
+    <string name="twofingerswipestartalerttext">Deslice dos dedos para enviarnos sus comentarios</string>
 </resources>

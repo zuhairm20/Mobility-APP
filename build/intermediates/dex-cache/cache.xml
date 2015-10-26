@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Zuhair/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/library-1.0.19-d433585afea9d9ec999fe9ef5ab33c79420f9c51.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/.gradle/caches/modules-2/files-2.1/com.squareup.mimecraft/mimecraft/1.1.1/66f73c3e42fa4658ef1cbae8b1ebefdaa856a23c/mimecraft-1.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66f73c3e42fa4658ef1cbae8b1ebefdaa856a23c">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/mimecraft-1.1.1-fcb1286af75c900001ef1baca2e97ce8491f338b.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-f1d30c602f5dbeb6de6c4a22224e6484004e0f47.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7636779bda0b07b1dc7f6dea9e5b5fe1d882c40e.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8202aebf0fb089267542ad56a883fbc3d71f48c4">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-124f892e45fe41dc44dd9ffdabd7085a3f67562b.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1c60880a1661db1057c6e3800f1b3cec7a64b984">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e2b0128de4e111002754adcf0017e77852eecbd2.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-81fff95345674e3c5f6fe71628ea3ba740259c82.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-7633b62d1e5119821291e5086bbdf769fe2eb3a5.jar" />
+    </item>
+    <item
+        jar="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7fdfc548d836b533a5fba8645dd0d2efb0d842ea.jar" />
+    </item>
+
+</items>

@@ -10,6 +10,7 @@ package com.parse.starter;
 
 import android.app.Application;
 
+import com.instabug.library.Instabug;
 import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseUser;
@@ -25,9 +26,11 @@ public class StarterApplication extends Application {
     Parse.enableLocalDatastore(this);
 
     // Add your initialization code here
-    Parse.initialize(this);
+    Parse.initialize(this, "DBn0XiJ88BtZZOwiqx6q7goaAFOMfFbRSH5s8Tcf", "bOUg9acXXWmfK9OdycZz7suoaU6ZcJFI8qNFTGtc");
 
-    ParseUser.enableAutomaticUser();
+      Instabug.initialize(this, "bacd29b827900ad96a56b89316de97ef");
+
+      ParseUser.enableAutomaticUser();
     ParseACL defaultACL = new ParseACL();
     // Optionally enable public read access.
     // defaultACL.setPublicReadAccess(true);

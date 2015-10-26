@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Parse-Starter-Project-1.10.2/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-tr/values-tr.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-tr/values-tr.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>Bir sorunu rapor</item>
+        <item>Geri Bildirim Gönder</item>
+    </string-array>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-tr/values-tr.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ana ekrana git"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Yukarı git"</string>
@@ -15,4 +21,25 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sesli arama"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Şununla paylaş"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s ile paylaş"</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-tr/values-tr.xml -->
+    <eat-comment/>
+    <string name="bottommessage">&amp;name&amp; tarafından sağlanan geri bildirim</string>
+    <string name="bugheader">Bir sorunu rapor</string>
+    <string name="cancelbutton">İptal</string>
+    <string name="commentplaceholder">Geri bildiriminizi buraya yazın...</string>
+    <string name="edgeswipestartalerttext">Geri bildirim göndermek için kenardan çekin</string>
+    <string name="emailplaceholder">E-postanızı girin...</string>
+    <string name="feedbackheader">Geri Bildirim Gönder</string>
+    <string name="feedbacksentalerttext">InstabugApp\'ın geliştirilmesindeki yardımınız için teşekkür ederiz!</string>
+    <string name="feedbacksentalerttitle">Geri Bildirim Gönderildi</string>
+    <string name="invalidcommentalerttext">Lütfen geçerli bir yorum girin</string>
+    <string name="invalidcommentalerttitle">Geçersiz Yorum</string>
+    <string name="invalidemailalerttext">Lütfen geçerli bir e-posta girin</string>
+    <string name="invalidemailalerttitle">Geçersiz E-posta</string>
+    <string name="pleasewait">Lütfen bekleyiniz</string>
+    <string name="screenshotstartalerttext">Geri bildirim göndermek için ekran görüntüsü alın</string>
+    <string name="shakestartalerttext">Geri bildirim göndermek için sallayın</string>
+    <string name="submitbutton">Gönder</string>
+    <string name="tutorialalerttext">Ekran görüntüsünü çekin, ardından metin ekleyin</string>
+    <string name="twofingerswipestartalerttext">Geri bildirim göndermek için iki parmağınızla çekin</string>
 </resources>

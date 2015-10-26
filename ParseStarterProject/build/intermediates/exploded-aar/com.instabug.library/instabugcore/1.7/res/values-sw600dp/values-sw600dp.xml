@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/values-sw600dp/values.xml -->
+    <eat-comment/>
+    <bool name="isTablet">true</bool>
+    <dimen name="instabug_actionbar_height">56dp</dimen>
+</resources>

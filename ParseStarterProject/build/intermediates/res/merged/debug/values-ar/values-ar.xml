@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Parse-Starter-Project-1.10.2/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-ar/values-ar.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-ar/values-ar.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>أبلغ عن مشكلة</item>
+        <item>أرسل ملاحظاتك</item>
+    </string-array>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-ar/values-ar.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"التنقل إلى الشاشة الرئيسية"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
@@ -15,4 +21,25 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"البحث الصوتي"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"‏مشاركة مع %s"</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-ar/values-ar.xml -->
+    <eat-comment/>
+    <string name="bottommessage">&amp;name&amp; خاصية الاقتراحات مقدمة من</string>
+    <string name="bugheader">أبلغ عن مشكلة</string>
+    <string name="cancelbutton">إلغاء</string>
+    <string name="commentplaceholder">...اكتب ملاحظاتك هنا</string>
+    <string name="edgeswipestartalerttext">إمسح من الجانب لإرسال تعليقك</string>
+    <string name="emailplaceholder">...أدخل بريدك الإلكتروني</string>
+    <string name="feedbackheader">أرسل ملاحظاتك</string>
+    <string name="feedbacksentalerttext">شكرا لكم لمساعدتنا على تحسين InstabugApp!</string>
+    <string name="feedbacksentalerttitle">تم إرسال التعليق</string>
+    <string name="invalidcommentalerttext">الرجاء إدخال تعليق صحيح</string>
+    <string name="invalidcommentalerttitle">تعليق غير صحيح</string>
+    <string name="invalidemailalerttext">الرجاء إدخال بريد إلكتروني صحيح لاتاحة الفرصة لنا لنعود اليكم</string>
+    <string name="invalidemailalerttitle">بريد إلكتروني غير صحيح</string>
+    <string name="pleasewait">من فضلك انتظر لحظة</string>
+    <string name="screenshotstartalerttext">خذ صورة لإرسال تعليقك</string>
+    <string name="shakestartalerttext">هز الجهاز لإرسال تعليقك</string>
+    <string name="submitbutton">إرسال</string>
+    <string name="tutorialalerttext">ارسم على الشاشة لتسليط الضوء عليها أو أضف نص</string>
+    <string name="twofingerswipestartalerttext">إمسح اصبعين لإرسال تعليقك</string>
 </resources>

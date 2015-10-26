@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Parse-Starter-Project-1.10.2/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-ko/values-ko.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-ko/values-ko.xml -->
+    <eat-comment/>
+    <string-array name="report_options">
+        <item>문제를보고</item>
+        <item>의견 보내기</item>
+    </string-array>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-ko/values-ko.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"홈 탐색"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"위로 탐색"</string>
@@ -15,4 +21,25 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"음성 검색"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"공유 대상"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s와(과) 공유"</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-ko/values-ko.xml -->
+    <eat-comment/>
+    <string name="bottommessage">본 의견 기능은 &amp;name&amp;의 기술을 이용합니다</string>
+    <string name="bugheader">문제를보고</string>
+    <string name="cancelbutton">취소</string>
+    <string name="commentplaceholder">이곳에 의견을 입력해주십시오...</string>
+    <string name="edgeswipestartalerttext">화면을 끝에서 스와이프해서 의견 보내기</string>
+    <string name="emailplaceholder">이메일 주소를 입력해주십시오...</string>
+    <string name="feedbackheader">의견 보내기</string>
+    <string name="feedbacksentalerttext">InstabugApp 향상에 도움을 주셔서 감사합니다!</string>
+    <string name="feedbacksentalerttitle">의견 전송 완료</string>
+    <string name="invalidcommentalerttext">유효한 의견을 입력해주십시오</string>
+    <string name="invalidcommentalerttitle">유효하지 않은 의견</string>
+    <string name="invalidemailalerttext">유효한 이메일을 입력해주십시오</string>
+    <string name="invalidemailalerttitle">유효하지 않은 이메일</string>
+    <string name="pleasewait">잠시만 기다려주십시오</string>
+    <string name="screenshotstartalerttext">스크린샷을 촬영해 의견 보내기</string>
+    <string name="shakestartalerttext">흔들어서 의견 보내기</string>
+    <string name="submitbutton">전송</string>
+    <string name="tutorialalerttext">스크린샷에 그린 후 텍스트 추가</string>
+    <string name="twofingerswipestartalerttext">두 손가락으로 화면을 움직여 의견 보내기</string>
 </resources>
