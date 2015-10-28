@@ -10,5 +10,61 @@
     tools:showIn="@layout/activity_create_profile"
     tools:context="com.parse.starter.CreateProfileActivity">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your details below"
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:id="@+id/nameEdit"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEdit"
+        android:hint="Enter Your Age"
+        android:inputType="number"
+        android:id="@+id/ageEdit"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageEdit"
+        android:hint="Phone Number"
+        android:id="@+id/phoneNumEdit"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="State Your Disability"
+        android:id="@+id/disabilityEdit"
+        android:layout_below="@+id/phoneNumEdit"
+        />
+
+
+
+
+
+
+
+
+
+
 </RelativeLayout>
 <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/src/main/res/layout/content_create_profile.xml -->

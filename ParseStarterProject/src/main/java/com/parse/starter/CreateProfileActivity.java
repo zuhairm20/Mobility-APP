@@ -1,14 +1,24 @@
 package com.parse.starter;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
+
+import com.parse.ParseUser;
 
 public class CreateProfileActivity extends AppCompatActivity {
 
+    EditText phoneNumEdit;
+    EditText ageEdit;
+    EditText disabilityEdit;
+    EditText nameEdit;
+
+    ParseUser user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,14 +26,33 @@ public class CreateProfileActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+         user = ParseUser.getCurrentUser();
+
+         phoneNumEdit = (EditText) findViewById(R.id.phoneNumEdit);
+         ageEdit = (EditText) findViewById(R.id.ageEdit);
+         disabilityEdit = (EditText) findViewById(R.id.disabilityEdit);
+         nameEdit = (EditText) findViewById(R.id.nameEdit);
+
+
+        FloatingActionButton saveButton = (FloatingActionButton) findViewById(R.id.fab);
+
+        saveButton.setBackgroundTintList(ColorStateList.valueOf(Color.rgb(229, 204, 255)));
+        saveButton.setRippleColor(Color.rgb(220, 189, 250));
+        saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+
+                String phoneNumber = phoneNumEdit.getText().toString();
+                String age = ageEdit.getText().toString();
+                String disability = disabilityEdit.getText().toString();
+                String name = nameEdit.getText().toString();
+
             }
         });
+
+
+
+
     }
 
 }
