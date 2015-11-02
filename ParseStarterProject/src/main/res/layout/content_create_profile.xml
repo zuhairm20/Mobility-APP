@@ -57,7 +57,29 @@
         android:layout_below="@+id/phoneNumEdit"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select Your Gender"
+        android:textStyle="bold"
+        android:layout_below="@id/disabilityEdit"
+        android:id="@+id/genderText"
+        />
 
+
+    <CheckBox android:id="@+id/checkbox_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/genderText"/>
+
+    <CheckBox android:id="@+id/checkbox_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkbox_male"/>
 
 
 
