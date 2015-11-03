@@ -14,54 +14,79 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please enter your details below"
+        android:text="@string/details"
         android:textStyle="bold"
         android:id="@+id/textView" />
 
 
 
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:text="@string/name"
+        android:id="@+id/nameText"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Your Name"
+        android:hint="Your Full Name"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/nameText"
         android:id="@+id/nameEdit"
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nameEdit"
+        android:text="@string/age"
+        android:id="@+id/ageText"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageText"
         android:hint="Enter Your Age"
         android:inputType="number"
         android:id="@+id/ageEdit"
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ageEdit"
+        android:text="@string/phoneNum"
+        android:id="@+id/numText"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numText"
         android:hint="Phone Number"
         android:id="@+id/phoneNumEdit"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumEdit"
+        android:text="@string/disability"
+        android:id="@+id/disabilityText"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="State Your Disability"
         android:id="@+id/disabilityEdit"
-        android:layout_below="@+id/phoneNumEdit"
+        android:layout_below="@+id/disabilityText"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please Select Your Gender"
-        android:textStyle="bold"
+        android:text="@string/gender"
         android:layout_below="@id/disabilityEdit"
         android:id="@+id/genderText"
         />

@@ -67,6 +67,11 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
+            android:name="com.parse.starter.fileReport"
+            android:label="@string/title_activity_file_report"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
             android:name="com.instabug.library.InstabugFeedbackActivity"
             android:windowSoftInputMode="adjustPan" />
 

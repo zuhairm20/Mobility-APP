@@ -28,7 +28,7 @@ public class SignInActivity extends AppCompatActivity {
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
-            Intent intent = new Intent(SignInActivity.this, CreateProfileActivity.class);
+            Intent intent = new Intent(SignInActivity.this, fileReport.class);
             startActivity(intent);
             // do stuff with the user
         }
@@ -67,12 +67,12 @@ public class SignInActivity extends AppCompatActivity {
             public void done(ParseUser user, ParseException e) {
                 if (user != null) {
                     showToast(getApplicationContext(), "YAY LOGGED IN!");
-                    Intent intent = new Intent(SignInActivity.this, CreateProfileActivity.class);
+                    Intent intent = new Intent(SignInActivity.this, fileReport.class);
                     startActivity(intent);
                     // Hooray! The user is logged in.
                 } else {
                     Log.d("Zuhair", "" + e);
-                    // Signup failed. Look at the ParseException to see what happened.
+                    // Sign in failed. Look at the ParseException to see what happened.
                 }
             }
         });
