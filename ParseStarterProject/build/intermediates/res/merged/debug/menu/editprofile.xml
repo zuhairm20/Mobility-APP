@@ -12,4 +12,9 @@
         android:title="File Report"
         android:orderInCategory="99"
         android:showAsAction="never"/>
+
+    <item android:id="@+id/action_signout"
+        android:showAsAction="never"
+        android:title="Sign Out"
+        android:orderInCategory="101"/>
 </menu><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/src/main/res/menu/editprofile.xml -->

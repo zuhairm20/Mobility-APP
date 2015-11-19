@@ -91,17 +91,17 @@ public final class R {
 		public static final int instabug_twoswipeleft_frame_9 = 0x7f020072;
 	}
 	public static final class id {
-		public static final int animation_description = 0x7f0e0094;
-		public static final int animation_frame = 0x7f0e0093;
-		public static final int annotation_view = 0x7f0e008a;
-		public static final int annotation_view_holder = 0x7f0e0089;
-		public static final int color_blue_button = 0x7f0e008c;
-		public static final int color_gray_button = 0x7f0e0091;
-		public static final int color_green_button = 0x7f0e008d;
-		public static final int color_orange_button = 0x7f0e008f;
-		public static final int color_red_button = 0x7f0e0090;
-		public static final int color_yellow_button = 0x7f0e008e;
-		public static final int email_separator = 0x7f0e0097;
+		public static final int animation_description = 0x7f0e0098;
+		public static final int animation_frame = 0x7f0e0097;
+		public static final int annotation_view = 0x7f0e008e;
+		public static final int annotation_view_holder = 0x7f0e008d;
+		public static final int color_blue_button = 0x7f0e0090;
+		public static final int color_gray_button = 0x7f0e0095;
+		public static final int color_green_button = 0x7f0e0091;
+		public static final int color_orange_button = 0x7f0e0093;
+		public static final int color_red_button = 0x7f0e0094;
+		public static final int color_yellow_button = 0x7f0e0092;
+		public static final int email_separator = 0x7f0e009b;
 		public static final int instabug_action_cancel = 0x7f0e0005;
 		public static final int instabug_action_clear_annotations = 0x7f0e0006;
 		public static final int instabug_action_open_composer = 0x7f0e0007;
@@ -109,35 +109,35 @@ public final class R {
 		public static final int instabug_action_send = 0x7f0e0009;
 		public static final int instabug_bottom_bar_toolbar = 0x7f0e000a;
 		public static final int instabug_brush_stroke = 0x7f0e000b;
-		public static final int instabug_composer_internal_layout = 0x7f0e0095;
-		public static final int instabug_composer_layout = 0x7f0e0092;
-		public static final int instabug_logo = 0x7f0e0098;
-		public static final int instabug_lyt_color_picker = 0x7f0e008b;
-		public static final int instabug_main_invocation = 0x7f0e009b;
-		public static final int instabug_option_report_bug = 0x7f0e009d;
-		public static final int instabug_option_send_feedback = 0x7f0e009e;
-		public static final int instabug_options_invocation = 0x7f0e009c;
-		public static final int instabug_pbi_text = 0x7f0e0099;
-		public static final int instabug_titlebar = 0x7f0e0086;
-		public static final int instabug_toolbar = 0x7f0e0087;
+		public static final int instabug_composer_internal_layout = 0x7f0e0099;
+		public static final int instabug_composer_layout = 0x7f0e0096;
+		public static final int instabug_logo = 0x7f0e009c;
+		public static final int instabug_lyt_color_picker = 0x7f0e008f;
+		public static final int instabug_main_invocation = 0x7f0e009f;
+		public static final int instabug_option_report_bug = 0x7f0e00a1;
+		public static final int instabug_option_send_feedback = 0x7f0e00a2;
+		public static final int instabug_options_invocation = 0x7f0e00a0;
+		public static final int instabug_pbi_text = 0x7f0e009d;
+		public static final int instabug_titlebar = 0x7f0e008a;
+		public static final int instabug_toolbar = 0x7f0e008b;
 		public static final int instabug_top_bar_toolbar = 0x7f0e000c;
 		public static final int none = 0x7f0e0017;
 		public static final int normal = 0x7f0e0013;
-		public static final int progress_spinner = 0x7f0e0088;
-		public static final int send_message = 0x7f0e009a;
-		public static final int text_composer = 0x7f0e0096;
+		public static final int progress_spinner = 0x7f0e008c;
+		public static final int send_message = 0x7f0e009e;
+		public static final int text_composer = 0x7f0e009a;
 		public static final int user_email = 0x7f0e0071;
 	}
 	public static final class integer {
 	}
 	public static final class layout {
-		public static final int instabug_activity_annotation = 0x7f040027;
-		public static final int instabug_lyt_bottom_bar = 0x7f040028;
-		public static final int instabug_lyt_dialog_animation = 0x7f040029;
-		public static final int instabug_lyt_dialog_composer = 0x7f04002a;
-		public static final int instabug_lyt_dialog_composer_standalone = 0x7f04002b;
-		public static final int instabug_lyt_invocation = 0x7f04002c;
-		public static final int instabug_lyt_top_bar = 0x7f04002d;
+		public static final int instabug_activity_annotation = 0x7f040029;
+		public static final int instabug_lyt_bottom_bar = 0x7f04002a;
+		public static final int instabug_lyt_dialog_animation = 0x7f04002b;
+		public static final int instabug_lyt_dialog_composer = 0x7f04002c;
+		public static final int instabug_lyt_dialog_composer_standalone = 0x7f04002d;
+		public static final int instabug_lyt_invocation = 0x7f04002e;
+		public static final int instabug_lyt_top_bar = 0x7f04002f;
 	}
 	public static final class menu {
 		public static final int instabug_annotation_bottom_menu = 0x7f0f0001;

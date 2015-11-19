@@ -275,6 +275,16 @@ public class CreateProfileActivity extends AppCompatActivity {
             Intent intent = new Intent(CreateProfileActivity.this, fileReport.class);
             startActivity(intent);
         }
+
+        if (id == R.id.action_signout){
+            ParseUser currentUser = ParseUser.getCurrentUser();
+            currentUser.logOut();
+            Intent intent = new Intent(CreateProfileActivity.this, SignInActivity.class);
+            startActivity(intent);
+        }
+
+
+
         return super.onOptionsItemSelected(item);
     }
 

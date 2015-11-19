@@ -1,12 +1,18 @@
 package com.parse.starter;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -14,14 +20,24 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.parse.ParseACL;
 import com.parse.ParseException;
+import com.parse.ParseFile;
+//import com.parse.ParseImageView;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
+
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+
 
 public class fileReport extends AppCompatActivity {
 
@@ -32,6 +48,16 @@ public class fileReport extends AppCompatActivity {
     private String description;
     private ProgressDialog progressDialog;
 
+    protected Button mPhoto;
+    protected ImageView mImageView;
+    protected ParseFile saveImageFile;
+
+   // private ParseImageView taskPic;
+
+
+    private static final int CAMERA_REQUEST = 1888;
+    private static final int SELECT_PHOTO = 100;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +65,20 @@ public class fileReport extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+        //Initialize ImageView
+
+        mImageView = (ImageView) findViewById(R.id.imagePreview);
+
+        //Initialize Camera
+        mPhoto = (Button) findViewById(R.id.choosePic);
+
+        mPhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectImage();
+            }
+        });
 
         titleEdit = (EditText) findViewById(R.id.titleEdit);
 
@@ -85,7 +125,40 @@ public class fileReport extends AppCompatActivity {
                 }
             }
             });
+
+
         }
+
+    private void selectImage() {
+
+        final CharSequence[] options = { "Take Photo", "Choose from Gallery","Cancel" };
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(fileReport.this);
+        builder.setTitle("Add Photo!");
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int item) {
+                if (options[item].equals("Take Photo"))
+                {
+
+                    Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivityForResult(takePictureIntent, 1);
+                    }
+                }
+                else if (options[item].equals("Choose from Gallery"))
+                {
+                    Intent intent = new   Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+                    startActivityForResult(intent, 2);
+
+                }
+                else if (options[item].equals("Cancel")) {
+                    dialog.dismiss();
+                }
+            }
+        });
+        builder.show();
+    }
 
 
 
@@ -103,6 +176,81 @@ public class fileReport extends AppCompatActivity {
         }
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            if (requestCode == 1) {
+
+                Bundle extras = data.getExtras();
+                Bitmap bitmap = (Bitmap) extras.get("data");
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                mImageView.setImageBitmap(bitmap);
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+                byte[] b = stream.toByteArray();
+                saveImageFile = new ParseFile("reportPicture.jpg", b);
+                //selectPhoto.setText("taskPicture.jpg");
+                //taskPic.setParseFile(saveImageFile);
+                //taskPic.loadInBackground(new GetDataCallback() {
+  //                  @Override
+    //                public void done(byte[] data, ParseException e) {
+      //                  if (e == null) {
+        //                    onLoadingFinish();
+//
+  //                          Log.d("Zuhair", "Got image");
+    //                    }
+      //                  else{
+        //                    Log.d("Zuhair", "" + e.getMessage());
+          //              }
+            //        }
+              //  });
+
+                if (bitmap !=null) {
+                    Log.d("Zuhair", "not null");
+                }
+
+
+            }
+
+            else if (requestCode == 2) {
+
+                Uri selectedImage = data.getData();
+
+                try{
+                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+                    byte[] b = stream.toByteArray();
+                    mImageView.setImageBitmap(bitmap);
+                    saveImageFile = new ParseFile("taskPicture.jpg", b);
+                    //selectPhoto.setText("taskPicture.jpg");
+                    //taskPic.setParseFile(saveImageFile);
+//                    taskPic.loadInBackground(new GetDataCallback() {
+  //                      @Override
+    //                    public void done(byte[] data, ParseException e) {
+       //                     if (e == null) {
+     //                           onLoadingFinish();
+
+//                                Log.d("Zuhair", "Got image");
+  //                          }
+    //                        else{
+      //                          Log.d("Zuhair", "" + e.getMessage());
+        //                    }
+          //              }
+      //              });
+                }
+                catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+        }
+    }
 
     public void hideKeyboard(View view) {
         InputMethodManager inputManager = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -128,6 +276,13 @@ public class fileReport extends AppCompatActivity {
         final ParseObject report = new ParseObject("Report");
         //String id = (String) ParseUser.getCurrentUser().get("objectId");
 
+        if (saveImageFile != null){
+            report.put("reportImage", saveImageFile);
+        }
+
+        if (saveImageFile == null){
+            //do nothing
+        }
         report.put("createdBy", user);
 
         report.put("Content", description);
@@ -142,7 +297,7 @@ public class fileReport extends AppCompatActivity {
         final ParseACL acl = new ParseACL();
         acl.setPublicReadAccess(true);
         acl.setWriteAccess(ParseUser.getCurrentUser(), true);
-
+        ///create roles
         report.setACL(acl);
 
         report.saveInBackground(new SaveCallback() {
@@ -152,7 +307,8 @@ public class fileReport extends AppCompatActivity {
                 //success
                     onLoadingFinish();
                     showToast(getApplicationContext(), "You have successfully filed this report. It will now be reviewed by an admin.");
-                    Intent intent = new Intent(fileReport.this, fileReport.class);
+                    Intent intent = new Intent(fileReport.this, viewReport.class);
+                    intent.putExtra("reportId", report.getObjectId());
                     startActivity(intent);
                 }
                 else{
@@ -182,6 +338,14 @@ public class fileReport extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+
+        if (id == R.id.action_signout){
+            ParseUser currentUser = ParseUser.getCurrentUser();
+            currentUser.logOut();
+            Intent intent = new Intent(fileReport.this, SignInActivity.class);
+            startActivity(intent);
+                }
+
 
         if (id == R.id.action_editProfile){
             Intent intent = new Intent(fileReport.this, CreateProfileActivity.class);

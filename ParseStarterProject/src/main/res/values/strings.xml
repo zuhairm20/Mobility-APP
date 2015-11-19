@@ -25,4 +25,5 @@
     <string name="phoneNum">Phone Number</string>
     <string name="disability">Disability</string>
     <string name="gender">Select your gender</string>
+    <string name="title_activity_view_report">viewReport</string>
 </resources>

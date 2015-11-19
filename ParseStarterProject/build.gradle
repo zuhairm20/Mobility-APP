@@ -31,13 +31,10 @@ android {
 }
 
 dependencies {
-
-
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.parse.bolts:bolts-android:1.2.1'
     compile 'com.parse:parse-android:1.10.2'
     compile 'com.instabug.library:instabugsupport:1.+'
-    compile 'com.android.support:design:22.2.1'
     compile 'com.android.support:design:22.2.1'
 }
 

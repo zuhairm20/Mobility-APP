@@ -12,12 +12,17 @@
     tools:context=".MainActivity">
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
-        android:orderInCategory="100"
+        android:orderInCategory="99"
         app:showAsAction="never"/>
 
     <item android:id="@+id/action_editProfile"
         android:title="Edit Profile"
-        android:orderInCategory="99"
+        android:orderInCategory="98"
         android:showAsAction="never"/>
+
+    <item android:id="@+id/action_signout"
+        android:showAsAction="never"
+        android:title="Sign Out"
+        android:orderInCategory="100"/>
 </menu>
 <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/src/main/res/menu/menu_main.xml -->
