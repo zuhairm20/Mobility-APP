@@ -287,7 +287,7 @@ public class fileReport extends AppCompatActivity {
 
         report.put("Content", description);
         report.put("Title", title);
-       // report.put("Status", "New");
+        report.put("Status", "New");
 
 
        // if (saveImageFile != null){
@@ -351,6 +351,13 @@ public class fileReport extends AppCompatActivity {
             Intent intent = new Intent(fileReport.this, CreateProfileActivity.class);
             startActivity(intent);
         }
+
+        if (id == R.id.action_manageReports){
+            Intent intent = new Intent(fileReport.this, manageReports.class);
+            startActivity(intent);
+        }
+
+
         return super.onOptionsItemSelected(item);
     }
 

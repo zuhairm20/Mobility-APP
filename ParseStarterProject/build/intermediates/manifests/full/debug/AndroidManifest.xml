@@ -64,18 +64,19 @@
         <activity
             android:name="com.parse.starter.CreateProfileActivity"
             android:label="@string/title_activity_create_profile"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.parse.starter.fileReport"
             android:label="@string/title_activity_file_report"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.parse.starter.viewReport"
             android:label="@string/title_activity_view_report"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.parse.starter.manageReports"
+            android:label="@string/title_activity_manage_reports"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.instabug.library.InstabugFeedbackActivity"
             android:windowSoftInputMode="adjustPan" />

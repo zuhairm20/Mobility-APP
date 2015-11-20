@@ -3,16 +3,21 @@ package com.parse.starter;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.GetCallback;
+import com.parse.GetDataCallback;
 import com.parse.ParseException;
+import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
@@ -31,6 +36,7 @@ public class viewReport extends AppCompatActivity {
 
         final TextView reportContent = (TextView) findViewById(R.id.reportContent);
 
+        final ImageView reportPic = (ImageView) findViewById(R.id.reportPic);
 
         Intent intent = this.getIntent();
 
@@ -45,6 +51,8 @@ public class viewReport extends AppCompatActivity {
                     if (e == null){
                         reportTitle.setText(rep.get("Title").toString());
                         reportContent.setText(rep.get("Content").toString());
+                        ParseFile repImage = (ParseFile) rep.getParseFile("reportImage");
+                        loadImages(repImage, reportPic);
                         onLoadingFinish();
 
                     }
@@ -57,7 +65,30 @@ public class viewReport extends AppCompatActivity {
             });
         }
 
+
+
 }
+
+    private void loadImages(ParseFile thumbnail, final ImageView img) {
+
+        if (thumbnail != null) {
+            thumbnail.getDataInBackground(new GetDataCallback() {
+                @Override
+                public void done(byte[] data, ParseException e) {
+                    if (e == null) {
+                        Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
+                        img.setImageBitmap(bmp);
+                    }
+                    else {
+                    }
+                }
+            });
+        }
+
+        else {
+            //img.setImageResource(R.drawable.menu);
+        }
+    }
 
 
     protected static void showToast(Context con, CharSequence text) {

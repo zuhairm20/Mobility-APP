@@ -20,6 +20,13 @@
         android:orderInCategory="98"
         android:showAsAction="never"/>
 
+    <item android:id="@+id/action_manageReports"
+        android:title="Manage Reports"
+        android:orderInCategory="98"
+        android:showAsAction="never"/>
+
+
+
     <item android:id="@+id/action_signout"
         android:showAsAction="never"
         android:title="Sign Out"

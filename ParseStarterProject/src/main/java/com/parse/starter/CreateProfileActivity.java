@@ -75,17 +75,17 @@ public class CreateProfileActivity extends AppCompatActivity {
                     }
 
 
-                    if (curr.has("Age")) ;
+                    if (curr.has("Age"))
                     {
                         ageEdit.setText(curr.get("Age").toString());
                     }
 
-                    if (curr.has("phoneNumber")) ;
+                    if (curr.has("phoneNumber"))
                     {
                         phoneNumEdit.setText(curr.get("phoneNumber").toString());
                     }
 
-                    if (curr.has("Disability")) ;
+                    if (curr.has("Disability"))
                     {
                         disabilityEdit.setText(curr.get("Disability").toString());
                     }
@@ -170,6 +170,14 @@ public class CreateProfileActivity extends AppCompatActivity {
 
         }
 
+        if ((male.isChecked()) && (female.isChecked())) {
+            save = false;
+            male.startAnimation(shake);
+            female.startAnimation(shake);
+            showToast(getApplicationContext(), "You must select only one gender");
+
+        }
+
         else if (save){
             onLoadingStart(true, "");
             user.put("Name", name);
@@ -179,10 +187,12 @@ public class CreateProfileActivity extends AppCompatActivity {
 
             if (male.isChecked()){
                 user.put("Gender", "M");
+
             }
 
             if (female.isChecked()){
                 user.put("Gender", "F");
+
             }
 
             user.saveInBackground(new SaveCallback() {
