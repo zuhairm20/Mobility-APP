@@ -32,7 +32,7 @@ public class viewReport extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final TextView reportTitle = (TextView) findViewById(R.id.reportTitle);
+        final TextView reportTitle = (TextView) findViewById(R.id.facilityName);
 
         final TextView reportContent = (TextView) findViewById(R.id.reportContent);
 

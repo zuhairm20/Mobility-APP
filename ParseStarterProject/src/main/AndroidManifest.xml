@@ -54,18 +54,22 @@
         <activity
             android:name=".CreateProfileActivity"
             android:label="@string/title_activity_create_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".fileReport"
             android:label="@string/title_activity_file_report"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".viewReport"
             android:label="@string/title_activity_view_report"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".manageReports"
             android:label="@string/title_activity_manage_reports"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewFacilities"
+            android:label="@string/title_activity_view_facilities"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

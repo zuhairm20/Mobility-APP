@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
 
-        android:id="@+id/reportTitle"
+        android:id="@+id/facilityName"
         android:textColor="#ff60258e"
 
         android:textStyle="bold"
@@ -54,9 +54,9 @@
         android:id="@+id/textView12"
         android:textColor="#ff000000"
 
-        android:layout_below="@+id/reportTitle"
-        android:layout_alignLeft="@+id/reportTitle"
-        android:layout_alignStart="@+id/reportTitle"
+        android:layout_below="@+id/facilityName"
+        android:layout_alignLeft="@+id/facilityName"
+        android:layout_alignStart="@+id/facilityName"
         android:layout_marginRight="5dp"
         android:layout_marginTop="3dp" />
 
@@ -66,9 +66,9 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:id="@+id/imageView10"
-        android:layout_alignTop="@+id/reportTitle"
-        android:layout_toLeftOf="@+id/reportTitle"
-        android:layout_toStartOf="@+id/reportTitle"
+        android:layout_alignTop="@+id/facilityName"
+        android:layout_toLeftOf="@+id/facilityName"
+        android:layout_toStartOf="@+id/facilityName"
         android:layout_marginRight="12dp" />
 
     <ImageView

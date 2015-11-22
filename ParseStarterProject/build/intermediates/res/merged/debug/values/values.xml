@@ -376,6 +376,7 @@
     <string name="title_activity_manage_reports">manageReports</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_sign_in">Login</string>
+    <string name="title_activity_view_facilities">viewFacilities</string>
     <string name="title_activity_view_report">viewReport</string>
     <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>

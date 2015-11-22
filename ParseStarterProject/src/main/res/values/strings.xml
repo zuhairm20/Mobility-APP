@@ -26,4 +26,5 @@
     <string name="gender">Select your gender</string>
     <string name="title_activity_view_report">viewReport</string>
     <string name="title_activity_manage_reports">manageReports</string>
+    <string name="title_activity_view_facilities">viewFacilities</string>
 </resources>

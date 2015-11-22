@@ -35,13 +35,13 @@ public class facilityListAdapter extends ArrayAdapter<ParseObject> {
         if (v == null) {
             LayoutInflater vi;
             vi = LayoutInflater.from(getContext());
-            v = vi.inflate(R.layout.list_item_layout, null);
+            v = vi.inflate(R.layout.facility_item_layout, null);
         }
 
         ParseObject p = getItem(position);
 
         if (p != null) {
-            TextView title = (TextView) v.findViewById(R.id.reportTitle);
+            TextView title = (TextView) v.findViewById(R.id.facilityName);
             TextView content = (TextView) v.findViewById(R.id.reportContent);
             TextView userName = (TextView)  v.findViewById(R.id.userName);
             ImageView reportImage = (ImageView) v.findViewById(R.id.reportPicture);
