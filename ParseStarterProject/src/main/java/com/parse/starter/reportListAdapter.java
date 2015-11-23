@@ -40,9 +40,9 @@ public class reportListAdapter extends ArrayAdapter<ParseObject> {
 
         if (p != null) {
             TextView title = (TextView) v.findViewById(R.id.facilityName);
-            TextView content = (TextView) v.findViewById(R.id.reportContent);
-            TextView userName = (TextView)  v.findViewById(R.id.userName);
-            ImageView reportImage = (ImageView) v.findViewById(R.id.reportPicture);
+            TextView content = (TextView) v.findViewById(R.id.facilityDescription);
+            TextView userName = (TextView)  v.findViewById(R.id.facilityAddress);
+            ImageView reportImage = (ImageView) v.findViewById(R.id.facilityPicture);
 
             if (p.has("Title")) {
                 title.setText(p.get("Title").toString());

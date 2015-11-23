@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 ParseUser user = new ParseUser();
 
-                EditText userName = (EditText) findViewById(R.id.userName);
+                EditText userName = (EditText) findViewById(R.id.facilityAddress);
                 String name = userName.getText().toString();
                 user.put("Name", name);
 

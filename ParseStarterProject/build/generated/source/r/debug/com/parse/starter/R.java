@@ -2200,9 +2200,9 @@ containing a value of this type.
         public static final int progress_spinner=0x7f0e0091;
         public static final int radio=0x7f0e0059;
         public static final int registerButton=0x7f0e0073;
-        public static final int reportContent=0x7f0e008a;
+        public static final int facilityDescription =0x7f0e008a;
         public static final int reportPic=0x7f0e008b;
-        public static final int reportPicture=0x7f0e008e;
+        public static final int facilityPicture =0x7f0e008e;
         public static final int right=0x7f0e002d;
         public static final int screen=0x7f0e003e;
         public static final int scroll=0x7f0e001f;
@@ -2251,7 +2251,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0e004d;
         public static final int up=0x7f0e0010;
         public static final int useLogo=0x7f0e001b;
-        public static final int userName=0x7f0e0070;
+        public static final int facilityAddress =0x7f0e0070;
         public static final int user_email=0x7f0e0071;
         public static final int view=0x7f0e0074;
         public static final int view_offset_helper=0x7f0e0011;

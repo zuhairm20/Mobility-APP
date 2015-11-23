@@ -34,7 +34,7 @@ public class viewReport extends AppCompatActivity {
 
         final TextView reportTitle = (TextView) findViewById(R.id.facilityName);
 
-        final TextView reportContent = (TextView) findViewById(R.id.reportContent);
+        final TextView reportContent = (TextView) findViewById(R.id.facilityDescription);
 
         final ImageView reportPic = (ImageView) findViewById(R.id.reportPic);
 

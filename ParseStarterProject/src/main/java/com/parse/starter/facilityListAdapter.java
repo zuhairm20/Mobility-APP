@@ -41,28 +41,25 @@ public class facilityListAdapter extends ArrayAdapter<ParseObject> {
         ParseObject p = getItem(position);
 
         if (p != null) {
-            TextView title = (TextView) v.findViewById(R.id.facilityName);
-            TextView content = (TextView) v.findViewById(R.id.reportContent);
-            TextView userName = (TextView)  v.findViewById(R.id.userName);
-            ImageView reportImage = (ImageView) v.findViewById(R.id.reportPicture);
+            TextView facilityName = (TextView) v.findViewById(R.id.facilityName);
+            TextView facilityDescription = (TextView) v.findViewById(R.id.facilityDescription);
+            TextView facilityAddress = (TextView)  v.findViewById(R.id.facilityAddress);
+            ImageView facilityImage = (ImageView) v.findViewById(R.id.facilityPicture);
 
             if (p.has("Title")) {
-                title.setText(p.get("Title").toString());
+                facilityName.setText(p.get("facilityName").toString());
             }
 
-            if (p.has("reportImage")) {
+            if (p.has("facilityImage")) {
                 loadImages(p.getParseFile("reportImage"), reportImage);
             }
 
-            if (p.has("Content")) {
-
-                content.setText(p.get("Content").toString());
+            if (p.has("facilityDescription")) {
+                facilityDescription.setText(p.get("facilityDescription").toString());
             }
 
-            ParseUser user = p.getParseUser("createdBy");
-
-            if (user != null) {
-                userName.setText(user.get("Name").toString());
+            if (p.has("facilityAddress")){
+                facilityAddress.setText(p.get("facilityAddress").toString());
             }
         }
         return v;

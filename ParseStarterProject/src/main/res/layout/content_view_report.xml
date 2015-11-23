@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/reportContent"
+        android:id="@+id/facilityDescription"
         android:layout_below="@id/facilityName"
         />
 
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/reportPic"
-        android:layout_below="@id/reportContent"/>
+        android:layout_below="@id/facilityDescription"/>
 
 
 </RelativeLayout>
