@@ -22,25 +22,24 @@ import com.parse.ParseQuery;
 import java.util.ArrayList;
 import java.util.List;
 
-public class viewFacilities extends InstabugListActivity {
-
+public class viewEvents extends InstabugListActivity {
 
     private ProgressDialog progressDialog;
     private SwipeRefreshLayout swipeLayout;
-    private List<ParseObject> facilities;
+    private List<ParseObject> events;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_facilities);
+        setContentView(R.layout.activity_view_events);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-      //  setSupportActionBar(toolbar);
+        //  setSupportActionBar(toolbar);
 
-        facilities = new ArrayList<>();
-        facilityListAdapter adapter = new facilityListAdapter(this, R.layout.facility_item_layout, facilities);
+        events = new ArrayList<>();
+        eventListAdapter adapter = new eventListAdapter(this, R.layout.event_item_layout, events);
         setListAdapter(adapter);
 
-        refreshFacilities();
+        refreshEvents();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +55,7 @@ public class viewFacilities extends InstabugListActivity {
             @Override
             public void onRefresh() {
                 swipeLayout.setRefreshing(false);
-                refreshFacilities();
+                refreshEvents();
             }
         });
 
@@ -64,9 +63,9 @@ public class viewFacilities extends InstabugListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        ParseObject t = facilities.get(position);
-        Intent intent = new Intent(this, viewFacility.class);
-        intent.putExtra("facilityId", t.getObjectId());
+        ParseObject t = events.get(position);
+        Intent intent = new Intent(this, viewEvent.class);
+        intent.putExtra("eventID", t.getObjectId());
         startActivity(intent);
     }
 
@@ -83,28 +82,28 @@ public class viewFacilities extends InstabugListActivity {
         }
     }
 
-    public void refreshFacilities(){
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Facility");
-        query.orderByDescending("facilityName");
-        onLoadingStart(true, "Loading Facilities...");
+    public void refreshEvents(){
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Event");
+        query.orderByDescending("eventName");
+        onLoadingStart(true, "Loading Events...");
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
-            public void done(List<ParseObject> facilityList, ParseException e) {
+            public void done(List<ParseObject> eventList, ParseException e) {
                 onLoadingFinish();
                 if (e == null) {
                     // If there are results, update the list of tasks
                     // and notify the adapter
-                    facilities.clear();
-                    for (ParseObject facility : facilityList) {
-                            facilities.add(facility);
+                    events.clear();
+                    for (ParseObject event : eventList) {
+                        events.add(event);
 
                     }
 
-                    if (facilities.isEmpty()) {
-                        showToast(getApplicationContext(), "There are no facilities to display.");
+                    if (events.isEmpty()) {
+                        showToast(getApplicationContext(), "There are no events to display.");
 
                     }
-                    ((facilityListAdapter) getListAdapter()).notifyDataSetChanged();
+                    ((eventListAdapter) getListAdapter()).notifyDataSetChanged();
                 }
                 else {
                     Log.d(getClass().getSimpleName(), "Error: " + e.getMessage());

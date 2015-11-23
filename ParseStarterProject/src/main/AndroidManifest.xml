@@ -74,6 +74,18 @@
         <activity
             android:name=".viewFacility"
             android:label="@string/title_activity_view_facility"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewEvents"
+            android:label="@string/title_activity_view_events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewEvent"
+            android:label="@string/title_activity_view_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewUserProfile"
+            android:label="@string/title_activity_view_user_profile"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

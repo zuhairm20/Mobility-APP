@@ -28,4 +28,7 @@
     <string name="title_activity_manage_reports">manageReports</string>
     <string name="title_activity_view_facilities">viewFacilities</string>
     <string name="title_activity_view_facility">viewFacility</string>
+    <string name="title_activity_view_events">viewEvents</string>
+    <string name="title_activity_view_event">viewEvent</string>
+    <string name="title_activity_view_user_profile">viewUserProfile</string>
 </resources>

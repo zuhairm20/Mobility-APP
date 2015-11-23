@@ -2140,7 +2140,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0e0046;
         public static final int expanded_menu=0x7f0e0056;
         public static final int fab=0x7f0e006f;
-        public static final int facilityName=0x7f0e0089;
+        public static final int facilityName =0x7f0e0089;
         public static final int fill=0x7f0e0029;
         public static final int fill_horizontal=0x7f0e002a;
         public static final int fill_vertical=0x7f0e002b;
