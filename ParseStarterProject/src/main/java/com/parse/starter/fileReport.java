@@ -66,6 +66,7 @@ public class fileReport extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+
         //Initialize ImageView
 
         mImageView = (ImageView) findViewById(R.id.imagePreview);
@@ -96,8 +97,6 @@ public class fileReport extends AppCompatActivity {
                 description = descEdit.getText().toString();
 
                 Boolean boo = true;
-
-
 
                 if (titleText.isEmpty())
                 {
@@ -223,7 +222,7 @@ public class fileReport extends AppCompatActivity {
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                     byte[] b = stream.toByteArray();
                     mImageView.setImageBitmap(bitmap);
-                    saveImageFile = new ParseFile("taskPicture.jpg", b);
+                    saveImageFile = new ParseFile("reportPicture.jpg", b);
                     //selectPhoto.setText("taskPicture.jpg");
                     //taskPic.setParseFile(saveImageFile);
 //                    taskPic.loadInBackground(new GetDataCallback() {

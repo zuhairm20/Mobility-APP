@@ -12,4 +12,33 @@
     tools:context="com.parse.starter.viewUserProfile"
     tools:showIn="@layout/activity_view_user_profile">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userGender"
+        android:layout_below="@id/userName"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userGender"
+        android:id="@+id/profilePicture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutMe"
+        android:layout_below="@+id/profilePicture"
+        />
+
+
+
 </RelativeLayout>

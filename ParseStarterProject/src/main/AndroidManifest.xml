@@ -86,6 +86,14 @@
         <activity
             android:name=".viewUserProfile"
             android:label="@string/title_activity_view_user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateEvent"
+            android:label="@string/title_activity_create_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateFacility"
+            android:label="@string/title_activity_create_facility"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -4,8 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -34,7 +32,9 @@ public class manageReports extends InstabugListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_reports);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-       // setSupportActionBar(toolbar);
+
+        //CoordinatorLayout cLayout = (CoordinatorLayout) inflater.inflate(R.layout.main_list_fragment, container, false);
+        // setSupportActionBar(toolbar);
 
         reports = new ArrayList<>();
         reportListAdapter adapter = new reportListAdapter(this, R.layout.list_item_layout, reports);
@@ -47,14 +47,7 @@ public class manageReports extends InstabugListActivity {
 
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
 
         final SwipeRefreshLayout swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
@@ -72,7 +65,7 @@ public class manageReports extends InstabugListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         ParseObject t = reports.get(position);
-        Intent intent = new Intent(this, viewReport.class);
+        Intent intent = new Intent(manageReports.this, viewReport.class);
         intent.putExtra("reportId", t.getObjectId());
         startActivity(intent);
     }

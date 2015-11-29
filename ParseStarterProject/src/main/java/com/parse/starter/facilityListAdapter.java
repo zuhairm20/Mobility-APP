@@ -50,7 +50,7 @@ public class facilityListAdapter extends ArrayAdapter<ParseObject> {
             }
 
             if (p.has("facilityImage")) {
-                loadImages(p.getParseFile("reportImage"), reportImage);
+               loadImages(p.getParseFile("reportImage"), facilityImage);
             }
 
             if (p.has("facilityDescription")) {

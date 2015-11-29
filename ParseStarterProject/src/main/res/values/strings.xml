@@ -31,4 +31,6 @@
     <string name="title_activity_view_events">viewEvents</string>
     <string name="title_activity_view_event">viewEvent</string>
     <string name="title_activity_view_user_profile">viewUserProfile</string>
+    <string name="title_activity_create_event">CreateEvent</string>
+    <string name="title_activity_create_facility">CreateFacility</string>
 </resources>

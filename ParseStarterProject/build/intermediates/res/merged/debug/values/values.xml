@@ -371,13 +371,19 @@
     <string name="submitbutton">Send</string>
     <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_create_event">CreateEvent</string>
+    <string name="title_activity_create_facility">CreateFacility</string>
     <string name="title_activity_create_profile">Edit Profile</string>
     <string name="title_activity_file_report">File Report</string>
     <string name="title_activity_manage_reports">manageReports</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_sign_in">Login</string>
+    <string name="title_activity_view_event">viewEvent</string>
+    <string name="title_activity_view_events">viewEvents</string>
     <string name="title_activity_view_facilities">viewFacilities</string>
+    <string name="title_activity_view_facility">viewFacility</string>
     <string name="title_activity_view_report">viewReport</string>
+    <string name="title_activity_view_user_profile">viewUserProfile</string>
     <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values/values.xml -->
     <eat-comment/>
     <string name="tutorialalerttext">Draw on screenshot then add text</string>

@@ -82,6 +82,30 @@
             android:label="@string/title_activity_view_facilities"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name="com.parse.starter.viewFacility"
+            android:label="@string/title_activity_view_facility"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.parse.starter.viewEvents"
+            android:label="@string/title_activity_view_events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.parse.starter.viewEvent"
+            android:label="@string/title_activity_view_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.parse.starter.viewUserProfile"
+            android:label="@string/title_activity_view_user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.parse.starter.CreateEvent"
+            android:label="@string/title_activity_create_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.parse.starter.CreateFacility"
+            android:label="@string/title_activity_create_facility"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.instabug.library.InstabugFeedbackActivity"
             android:windowSoftInputMode="adjustPan" />
 
