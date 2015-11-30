@@ -54,8 +54,6 @@ public class viewReport extends AppCompatActivity {
                         ParseFile repImage = rep.getParseFile("reportImage");
                         loadImages(repImage, reportPic);
                         onLoadingFinish();
-
-
                     }
 
                     else{

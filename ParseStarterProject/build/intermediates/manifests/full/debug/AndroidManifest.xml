@@ -118,6 +118,10 @@
             android:label="@string/title_activity_my_activities"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name="com.parse.starter.createAdmin"
+            android:label="@string/title_activity_create_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.instabug.library.InstabugFeedbackActivity"
             android:windowSoftInputMode="adjustPan" />
 

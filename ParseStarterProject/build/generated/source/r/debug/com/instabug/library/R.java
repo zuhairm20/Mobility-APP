@@ -131,13 +131,13 @@ public final class R {
 	public static final class integer {
 	}
 	public static final class layout {
-		public static final int instabug_activity_annotation = 0x7f040041;
-		public static final int instabug_lyt_bottom_bar = 0x7f040042;
-		public static final int instabug_lyt_dialog_animation = 0x7f040043;
-		public static final int instabug_lyt_dialog_composer = 0x7f040044;
-		public static final int instabug_lyt_dialog_composer_standalone = 0x7f040045;
-		public static final int instabug_lyt_invocation = 0x7f040046;
-		public static final int instabug_lyt_top_bar = 0x7f040047;
+		public static final int instabug_activity_annotation = 0x7f040043;
+		public static final int instabug_lyt_bottom_bar = 0x7f040044;
+		public static final int instabug_lyt_dialog_animation = 0x7f040045;
+		public static final int instabug_lyt_dialog_composer = 0x7f040046;
+		public static final int instabug_lyt_dialog_composer_standalone = 0x7f040047;
+		public static final int instabug_lyt_invocation = 0x7f040048;
+		public static final int instabug_lyt_top_bar = 0x7f040049;
 	}
 	public static final class menu {
 		public static final int instabug_annotation_bottom_menu = 0x7f0f0001;
