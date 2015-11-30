@@ -94,6 +94,18 @@
         <activity
             android:name=".CreateFacility"
             android:label="@string/title_activity_create_facility"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ownReports"
+            android:label="@string/title_activity_own_reports"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ownEvents"
+            android:label="@string/title_activity_own_events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".myActivities"
+            android:label="@string/title_activity_my_activities"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

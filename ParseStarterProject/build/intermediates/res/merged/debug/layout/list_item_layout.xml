@@ -8,14 +8,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-
-        android:id="@+id/facilityName"
+        android:id="@+id/reportName"
         android:textColor="#ff60258e"
-
         android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/facilityDescription"
-        android:layout_alignStart="@+id/facilityDescription"
+        android:layout_alignLeft="@+id/reportContent"
+        android:layout_alignStart="@+id/reportContent"
         android:layout_marginTop="10dp" />
 
     <TextView
@@ -23,7 +21,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Name Here"
-        android:id="@+id/facilityAddress"
+        android:id="@+id/reportUserName"
         android:textColor="#ff000000"
 
         android:layout_alignTop="@+id/textView12"
@@ -38,11 +36,10 @@
         android:layout_width="270dp"
         android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/facilityDescription"
+        android:id="@+id/reportContent"
         android:textColor="#ff525253"
-
         android:text="Report description"
-        android:layout_below="@+id/facilityAddress"
+        android:layout_below="@+id/textView12"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -54,9 +51,9 @@
         android:id="@+id/textView12"
         android:textColor="#ff000000"
 
-        android:layout_below="@+id/facilityName"
-        android:layout_alignLeft="@+id/facilityName"
-        android:layout_alignStart="@+id/facilityName"
+        android:layout_below="@+id/reportName"
+        android:layout_alignLeft="@+id/reportName"
+        android:layout_alignStart="@+id/reportName"
         android:layout_marginRight="5dp"
         android:layout_marginTop="3dp" />
 
@@ -66,15 +63,15 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:id="@+id/imageView10"
-        android:layout_alignTop="@+id/facilityName"
-        android:layout_toLeftOf="@+id/facilityName"
-        android:layout_toStartOf="@+id/facilityName"
+        android:layout_alignTop="@+id/reportName"
+        android:layout_toLeftOf="@+id/reportName"
+        android:layout_toStartOf="@+id/reportName"
         android:layout_marginRight="12dp" />
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/facilityPicture"
+        android:id="@+id/reportPicture"
         android:paddingLeft="10dp"
         android:layout_alignTop="@+id/imageView10"
         android:layout_alignLeft="@+id/imageView10"

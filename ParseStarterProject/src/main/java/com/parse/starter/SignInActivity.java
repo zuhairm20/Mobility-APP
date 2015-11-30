@@ -28,7 +28,7 @@ public class SignInActivity extends AppCompatActivity {
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
-            Intent intent = new Intent(SignInActivity.this, fileReport.class);
+            Intent intent = new Intent(SignInActivity.this, myActivities.class);
             startActivity(intent);
             // do stuff with the user
         }

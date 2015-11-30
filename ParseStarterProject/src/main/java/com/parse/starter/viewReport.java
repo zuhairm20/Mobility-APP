@@ -51,9 +51,10 @@ public class viewReport extends AppCompatActivity {
                     if (e == null){
                         reportTitle.setText(rep.get("Title").toString());
                         reportContent.setText(rep.get("Content").toString());
-                        ParseFile repImage = (ParseFile) rep.getParseFile("reportImage");
+                        ParseFile repImage = rep.getParseFile("reportImage");
                         loadImages(repImage, reportPic);
                         onLoadingFinish();
+
 
                     }
 
