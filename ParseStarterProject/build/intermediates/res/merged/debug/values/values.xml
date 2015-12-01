@@ -381,6 +381,7 @@
     <string name="title_activity_create_event">CreateEvent</string>
     <string name="title_activity_create_facility">CreateFacility</string>
     <string name="title_activity_create_profile">Edit Profile</string>
+    <string name="title_activity_create_suggestion">createSuggestion</string>
     <string name="title_activity_file_report">File Report</string>
     <string name="title_activity_manage_reports">manageReports</string>
     <string name="title_activity_my_activities">myActivities</string>

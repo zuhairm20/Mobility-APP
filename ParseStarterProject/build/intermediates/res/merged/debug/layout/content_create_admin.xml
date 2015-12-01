@@ -12,14 +12,5 @@
     tools:context="com.parse.starter.createAdmin"
     tools:showIn="@layout/activity_create_admin">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter Admin Password"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/password"
-        android:inputType="textPassword" />
-
 </RelativeLayout>
 <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/src/main/res/layout/content_create_admin.xml -->

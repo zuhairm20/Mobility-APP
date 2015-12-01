@@ -37,4 +37,5 @@
     <string name="title_activity_own_events">ownEvents</string>
     <string name="title_activity_my_activities">myActivities</string>
     <string name="title_activity_create_admin">createAdmin</string>
+    <string name="title_activity_create_suggestion">createSuggestion</string>
 </resources>
