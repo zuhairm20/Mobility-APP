@@ -383,6 +383,7 @@
     <string name="title_activity_create_profile">Edit Profile</string>
     <string name="title_activity_create_suggestion">createSuggestion</string>
     <string name="title_activity_file_report">File Report</string>
+    <string name="title_activity_list_suggestions">listSuggestions</string>
     <string name="title_activity_manage_reports">manageReports</string>
     <string name="title_activity_my_activities">myActivities</string>
     <string name="title_activity_own_events">ownEvents</string>

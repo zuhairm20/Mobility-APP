@@ -13,7 +13,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="11"
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -124,6 +124,10 @@
         <activity
             android:name="com.parse.starter.createSuggestion"
             android:label="@string/title_activity_create_suggestion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.parse.starter.listSuggestions"
+            android:label="@string/title_activity_list_suggestions"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.instabug.library.InstabugFeedbackActivity"

@@ -38,4 +38,5 @@
     <string name="title_activity_my_activities">myActivities</string>
     <string name="title_activity_create_admin">createAdmin</string>
     <string name="title_activity_create_suggestion">createSuggestion</string>
+    <string name="title_activity_list_suggestions">listSuggestions</string>
 </resources>

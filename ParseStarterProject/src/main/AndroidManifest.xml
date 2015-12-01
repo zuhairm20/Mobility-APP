@@ -114,6 +114,10 @@
         <activity
             android:name=".createSuggestion"
             android:label="@string/title_activity_create_suggestion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listSuggestions"
+            android:label="@string/title_activity_list_suggestions"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

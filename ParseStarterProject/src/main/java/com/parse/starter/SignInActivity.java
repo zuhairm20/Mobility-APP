@@ -28,7 +28,7 @@ public class SignInActivity extends AppCompatActivity {
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
-            Intent intent = new Intent(SignInActivity.this, createSuggestion.class);
+            Intent intent = new Intent(SignInActivity.this, listSuggestions.class);
             startActivity(intent);
             // do stuff with the user
         }

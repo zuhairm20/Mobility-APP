@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:9:1-120:12
+ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:9:1-124:12
 	xmlns:android
 		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:9:11-69
 	package
@@ -24,7 +24,7 @@ MERGED from [com.instabug.library:instabugcore:1.7] /Users/Zuhair/Desktop/Develo
 	android:name
 		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:13:22-76
 application
-ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:15:5-118:19
+ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:15:5-122:19
 MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.instabug.library:instabugsupport:1.7] /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7/AndroidManifest.xml:9:5-10:19
@@ -221,13 +221,21 @@ ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProje
 	android:name
 		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:111:13-40
 activity#com.parse.starter.createSuggestion
-ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:114:9-117:68
+ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:114:9-117:59
 	android:label
 		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:116:13-69
 	android:theme
 		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:117:13-56
 	android:name
 		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:115:13-45
+activity#com.parse.starter.listSuggestions
+ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:118:9-121:68
+	android:label
+		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:120:13-68
+	android:theme
+		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:121:13-56
+	android:name
+		ADDED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml:119:13-44
 uses-sdk
 INJECTED from /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/Zuhair/Desktop/Development/Apps/Mobility App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:20:5-43
