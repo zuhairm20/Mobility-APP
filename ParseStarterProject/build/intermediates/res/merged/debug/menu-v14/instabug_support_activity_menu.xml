@@ -5,4 +5,4 @@
         android:id="@+id/invoke_instabug_menu_item"
         android:title="@string/feedbackheader"
         android:showAsAction="never"/>
-</menu><!-- From: file:/home/hassan/instabug/repo/android-as/instabugsupport/src/main/res/menu-v14/instabug_support_activity_menu.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7/res/menu-v14/instabug_support_activity_menu.xml -->
+</menu><!-- From: file:/Users/mSobhy/workspaces/android/instabug-android/instabugsupport/src/main/res/menu-v14/instabug_support_activity_menu.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7.1/res/menu-v14/instabug_support_activity_menu.xml -->

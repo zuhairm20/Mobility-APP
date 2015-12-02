@@ -2,4 +2,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval" >
     <solid android:color="@color/instabug_annotation_color_blue" />
-</shape><!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/drawable/instabug_bk_blue_rounded.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/drawable/instabug_bk_blue_rounded.xml -->
+</shape><!-- From: file:/Users/mSobhy/workspaces/android/instabug-android/instabugcore/src/main/res/drawable/instabug_bk_blue_rounded.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/drawable/instabug_bk_blue_rounded.xml -->

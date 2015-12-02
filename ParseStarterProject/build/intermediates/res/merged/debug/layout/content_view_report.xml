@@ -28,6 +28,18 @@
         android:id="@+id/reportPic"
         android:layout_below="@id/facilityDescription"/>
 
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/approve"
+    android:layout_below="@id/reportPic"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deny"
+        android:layout_below="@id/approve"/>
+
 
 </RelativeLayout>
 <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/src/main/res/layout/content_view_report.xml -->

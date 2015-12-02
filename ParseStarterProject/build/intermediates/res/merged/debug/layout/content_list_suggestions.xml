@@ -26,6 +26,7 @@
             android:layout_alignParentBottom="true"
             android:background="@android:color/white"
             android:layout_marginTop="6dp"
+            android:focusable="true"
             />
 
     </android.support.v4.widget.SwipeRefreshLayout>

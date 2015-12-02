@@ -9,4 +9,4 @@
     android:repeatCount="6"
     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
     android:repeatMode="reverse"/>
-<!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/anim/instabug_anim_shake.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/anim/instabug_anim_shake.xml -->
+<!-- From: file:/Users/mSobhy/workspaces/android/instabug-android/instabugcore/src/main/res/anim/instabug_anim_shake.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/anim/instabug_anim_shake.xml -->

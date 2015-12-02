@@ -45,4 +45,4 @@
             <corners android:radius="3dp" />
         </shape>
     </item>
-</layer-list><!-- From: file:/home/hassan/instabug/repo/android-as/instabugcore/src/main/res/drawable/instabug_bk_dropshadow.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/drawable/instabug_bk_dropshadow.xml -->
+</layer-list><!-- From: file:/Users/mSobhy/workspaces/android/instabug-android/instabugcore/src/main/res/drawable/instabug_bk_dropshadow.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/drawable/instabug_bk_dropshadow.xml -->

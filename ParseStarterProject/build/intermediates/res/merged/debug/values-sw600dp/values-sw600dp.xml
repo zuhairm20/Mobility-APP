@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-sw600dp/values-sw600dp.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <bool name="isTablet">true</bool>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">24dp</dimen>
     <dimen name="abc_action_bar_default_height_material">64dp</dimen>
-    <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
-    <dimen name="abc_action_bar_navigation_padding_start_material">8dp</dimen>
-    <dimen name="abc_action_bar_overflow_padding_end_material">18dp</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8dp</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8dp</dimen>
     <dimen name="abc_config_prefDialogWidth">580dp</dimen>
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-sw600dp/values-sw600dp.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <dimen name="instabug_actionbar_height">56dp</dimen>
     <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml -->
@@ -25,7 +24,7 @@
     <dimen name="snackbar_min_width">320dp</dimen>
     <dimen name="snackbar_padding_vertical_2lines">@dimen/snackbar_padding_vertical</dimen>
     <dimen name="tab_min_width">160dp</dimen>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <integer name="abc_max_action_buttons">5</integer>
     <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml -->

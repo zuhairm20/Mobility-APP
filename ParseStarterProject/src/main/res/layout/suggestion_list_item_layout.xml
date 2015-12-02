@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="5dp"
@@ -13,11 +13,26 @@
         android:ellipsize="end"
         android:id="@+id/facilityName"
         android:textColor="#ff373737"
-        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-        
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fj"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/facilityName"
+        android:layout_alignRight="@+id/facilityName"
+        android:layout_alignEnd="@+id/facilityName"
+        android:checked="false" />
 
 
-        />
+
+
 
 
 

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-ko/values-ko.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/values-ko/values-ko.xml -->
     <eat-comment/>
     <string-array name="report_options">
         <item>문제를보고</item>
         <item>의견 보내기</item>
     </string-array>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-ko/values-ko.xml -->
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-ko/values-ko.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"홈 탐색"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"위로 탐색"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"옵션 더보기"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"완료"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"전체 보기"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"앱 선택"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"사용 안함"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"사용"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"검색..."</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"검색어 삭제"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"검색어"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"검색"</string>
@@ -21,7 +26,8 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"음성 검색"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"공유 대상"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s와(과) 공유"</string>
-    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7/res/values-ko/values-ko.xml -->
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"접기"</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/values-ko/values-ko.xml -->
     <eat-comment/>
     <string name="bottommessage">본 의견 기능은 &amp;name&amp;의 기술을 이용합니다</string>
     <string name="bugheader">문제를보고</string>
@@ -39,6 +45,11 @@
     <string name="pleasewait">잠시만 기다려주십시오</string>
     <string name="screenshotstartalerttext">스크린샷을 촬영해 의견 보내기</string>
     <string name="shakestartalerttext">흔들어서 의견 보내기</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-ko/values-ko.xml -->
+    <eat-comment/>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugcore/1.7.1/res/values-ko/values-ko.xml -->
+    <eat-comment/>
     <string name="submitbutton">전송</string>
     <string name="tutorialalerttext">스크린샷에 그린 후 텍스트 추가</string>
     <string name="twofingerswipestartalerttext">두 손가락으로 화면을 움직여 의견 보내기</string>

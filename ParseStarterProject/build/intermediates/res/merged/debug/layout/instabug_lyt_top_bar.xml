@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/instabug_top_bar_toolbar"
-    app:theme="?attr/actionBarTheme"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" /><!-- From: file:/home/hassan/instabug/repo/android-as/instabugsupport/src/main/res/layout/instabug_lyt_top_bar.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7/res/layout/instabug_lyt_top_bar.xml -->
+    android:layout_height="@dimen/instabug_actionbar_height"
+    android:id="@+id/instabug_top_bar_toolbar">
+
+    <ImageButton
+        android:id="@+id/instabug_action_cancel"
+        android:layout_width="@dimen/instabug_actionbar_height"
+        android:layout_height="@dimen/instabug_actionbar_height"
+        android:onClick="onClick"
+        android:layout_gravity="left|center_vertical"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@drawable/instabug_ic_back" />
+
+    <TextView
+        android:id="@+id/instabug_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="@dimen/instabug_actionbar_height"
+        android:gravity="center_vertical"
+        android:text="@string/bugheader"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/instabug_action_send"
+        android:layout_width="@dimen/instabug_actionbar_height"
+        android:layout_height="@dimen/instabug_actionbar_height"
+        android:layout_gravity="right|center_vertical"
+        android:padding="8dp"
+        android:onClick="onClick"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/instabug_ic_action_send" />
+
+</FrameLayout><!-- From: file:/Users/mSobhy/workspaces/android/instabug-android/instabugsupport/src/main/res/layout/instabug_lyt_top_bar.xml --><!-- From: file:/Users/Zuhair/Desktop/Development/Apps/Mobility%20App/ParseStarterProject/build/intermediates/exploded-aar/com.instabug.library/instabugsupport/1.7.1/res/layout/instabug_lyt_top_bar.xml -->

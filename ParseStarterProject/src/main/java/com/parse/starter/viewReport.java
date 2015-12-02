@@ -8,8 +8,10 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,10 +22,12 @@ import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.SaveCallback;
 
 public class viewReport extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
+    ParseObject report;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,7 @@ public class viewReport extends AppCompatActivity {
                 @Override
                 public void done(ParseObject rep, ParseException e) {
                     if (e == null){
+                        report = rep;
                         reportTitle.setText(rep.get("Title").toString());
                         reportContent.setText(rep.get("Content").toString());
                         ParseFile repImage = rep.getParseFile("reportImage");
@@ -63,6 +68,48 @@ public class viewReport extends AppCompatActivity {
                 }
             });
         }
+
+        Button approve = (Button) findViewById(R.id.approve);
+        approve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onLoadingStart(true, "Approving Report...");
+                report.put("Status", "Approved");
+                report.saveInBackground(new SaveCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                       if (e == null) {
+                           onLoadingFinish();
+                           showToast(getApplicationContext(), "You have successfully approved report.");
+                           Intent intent = new Intent(viewReport.this, manageReports.class);
+                           startActivity(intent);
+                       }
+                    }
+                });
+            }
+        });
+
+        Button deny = (Button) findViewById(R.id.deny);
+        deny.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onLoadingStart(true, "Denying Report...");
+                report.put("Status", "Rejected");
+                report.saveInBackground(new SaveCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        if (e == null){
+                            onLoadingFinish();
+                            showToast(getApplicationContext(), "You have successfully denied report.");
+                            Intent intent = new Intent(viewReport.this, manageReports.class);
+                            startActivity(intent);
+                        }
+                    }
+                });
+            }
+        });
+
+
 
 
 
@@ -121,6 +168,18 @@ public class viewReport extends AppCompatActivity {
             }
 
         }
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)  {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+            // do something on back.
+            Intent intent = new Intent(viewReport.this, manageReports.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onKeyDown(keyCode, event);
     }
 
 

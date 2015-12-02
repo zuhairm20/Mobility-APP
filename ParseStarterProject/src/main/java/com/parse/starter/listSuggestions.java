@@ -24,6 +24,8 @@ public class listSuggestions extends ListActivity {
     private ProgressDialog progressDialog;
     private SwipeRefreshLayout swipeLayout;
     private List<ParseObject> suggestions;
+    private ParseObject t;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +54,16 @@ public class listSuggestions extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        ParseObject t = suggestions.get(position);
+        t = suggestions.get(position);
+        showToast(getApplicationContext(), "My nigga");
+
+
+
+        }
        // Intent intent = new Intent(this, viewEvent.class);
         //intent.putExtra("eventID", t.getObjectId());
        // startActivity(intent);
-    }
+
 
     public void onLoadingFinish() {
 
@@ -114,6 +121,10 @@ public class listSuggestions extends ListActivity {
     protected static void showToast(Context con, CharSequence text) {
         Toast.makeText(con, text, Toast.LENGTH_SHORT).show();
     }
+
+
+
+
 
 }
 
